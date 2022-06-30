@@ -57,5 +57,8 @@ func main() {
 	// 设置路由信息
 	r := setupRouter()
 	// 启动服务器并监听 8080 端口
-	r.Run(":8080")
+	err := r.Run(":8080")
+	if err != nil {
+		return
+	}
 }
