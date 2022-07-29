@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	"net/http"
 
 	"github.com/gin-gonic/gin"
@@ -62,5 +61,4 @@ func main() {
 	if err != nil {
 		return
 	}
-	fmt.Println("hello")
 }
